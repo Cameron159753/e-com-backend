@@ -1,0 +1,27 @@
+GET http://localhost:3000/auth/users
+
+
+###
+POST http://localhost:3000/api/auth/signin
+Content-Type: application/json
+
+{
+    "username":"mushi",
+    "email": "rahyaan@gmail.com",
+    "password":"ash",
+    "roles":["user", "admin"]
+}
+
+
+###
+DELETE http://localhost:3000/auth/users/622f302431acdfc4dff738f4
+x-access-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMmY0MmEzN2Q1MTE2YWM2NWU1MjFjOCIsImlhdCI6MTY0NzYxMTc5NCwiZXhwIjoxNjQ3Njk4MTk0fQ.V5-_DBMIiryGPLHdJ8QGYl0WWs-kjOrVvrXjeZFfWYo
+
+###
+PATCH http://localhost:3000/users
+Content-Type: application/json
+accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMmYzMGI2MzFhY2RmYzRkZmY3MzhmYyIsImlhdCI6MTY0NzI1OTg4MCwiZXhwIjoxNjQ3MzQ2MjgwfQ.Pzshxhk_tIS2eypj_DDQMFjQL-lgAQ69BFg1E2_w-iw
+
+{
+    "username":"baidah"
+}
