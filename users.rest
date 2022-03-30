@@ -1,27 +1,36 @@
-GET http://localhost:3000/auth/users
-
-
-###
-POST http://localhost:3000/api/auth/signin
+GET http://localhost:3000/products
 Content-Type: application/json
 
 {
-    "username":"mushi",
-    "email": "rahyaan@gmail.com",
-    "password":"ash",
-    "roles":["user", "admin"]
+    "username": "Cameron",
+    "email": "cameronbowers22@gmail.com",
+    "password": "Cameron22",
+    "roles": ["user", "admin"]
+}
+
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+x-access-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNDQ1YzM4NjVkOTU3NGQ4MzQxODY5MyIsImlhdCI6MTY0ODY0ODc4NSwiZXhwIjoxNjQ4NzM1MTg1fQ.Xojk5ZcCxwBPuC3GQ88z-9y2tD-MmphI326GDzhdRyI
+
+{
+    "name":"Nike Jordan 1",
+    "img": "https://i.postimg.cc/VvFtDhvG/j1.webp",
+    "price":"2200"
+   
+  
 }
 
 
 ###
 DELETE http://localhost:3000/auth/users/622f302431acdfc4dff738f4
-x-access-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMmY0MmEzN2Q1MTE2YWM2NWU1MjFjOCIsImlhdCI6MTY0NzYxMTc5NCwiZXhwIjoxNjQ3Njk4MTk0fQ.V5-_DBMIiryGPLHdJ8QGYl0WWs-kjOrVvrXjeZFfWYo
+x-access-token:
 
 ###
 PATCH http://localhost:3000/users
 Content-Type: application/json
-accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMmYzMGI2MzFhY2RmYzRkZmY3MzhmYyIsImlhdCI6MTY0NzI1OTg4MCwiZXhwIjoxNjQ3MzQ2MjgwfQ.Pzshxhk_tIS2eypj_DDQMFjQL-lgAQ69BFg1E2_w-iw
-
+accessToken: 
 {
-    "username":"baidah"
+    
 }
